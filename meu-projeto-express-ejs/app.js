@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 //nova rota
 app.get('/produtos', (req, res) => {
-  res.render('produtos', { message: 'Olá, Mundo!' });
+  res.render('produtos', { message: 'Produto' });
 });
 
 app.listen(port, () => {
