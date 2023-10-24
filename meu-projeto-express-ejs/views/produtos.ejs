@@ -2,24 +2,64 @@
 <html>
 <head>
   <title>Projeto Express e EJS</title>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="/styles2.css">
 </head>
 <body>
-  <h1><%= message %></h1>
+ 
+ <!--NAVBAR-->
+ <header>
 
-  <!--
-  <div class="card" style="width: 18rem;">
-    <img src="/imagem/carro2.avif" class="card-img-top card" style="width: 80%" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <nav>
+    <h1 class="logo">Canezin AUTOMOTIVE</h1>
+    <ul class="nav-list">
+      <li class="logo-link">Início</li>
+      <li class="logo-link">Sobre</li>
+      <li class="logo-link">Veículos</li>
+      <li class="logo-link">Contato</li>
+    </ul>
+    <!--Linhas menu-->
+    <div class="menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-  </div>
+
+  </nav>
+
+ </header>
+ 
 
 
+ <div class="container">
+      <!--Card 1-->
+      <div class="card card-1">
+        <!--card-header-->
+        <div class="card-header">
+          <a href="/produtos">
+            <img
+              src="/imagem/carro1.avif"
+              class="card-img"
+              alt="IMG-1 Onix Sedan"
+            />
+          </a>
+        </div>
+        <!--/card-header-->
 
-  </div>
- --> 
+        <!--card-body-->
+        <div class="card-body">
+          <h3 class="card-local">Onix 1.0 Sedan</h3>
+          <h2 class="carda-titulo">R$ 82.950</h2>
+          <p>Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan</p>
+        </div>
+        <!--/card-body-->
+
+        <!--card-footer-->
+        <div class="card-footer">
+          <a href="/produtos">Ver mais</a>
+        </div>
+        <!--/card-footer-->
+      </div>
+      <!--/Card 1-->
+
 </body>
 </html>

@@ -95,24 +95,25 @@ nav{
 }
 
 
+
 /*PRODUTOS*/
 .container{
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 /* Card */
 .card{
-    width: 300px;
-    height: 340px;
+    width: 350px;
+    height: 400px;
     margin: 25px;
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
 }
 
 /* Card Header */
@@ -131,7 +132,7 @@ nav{
 
 /* Card Body */
 .card-body{
-    height: 90px;
+    height: 149px;
     padding: 13px;
     text-align: center;
     font-family: sans-serif;
@@ -160,4 +161,9 @@ nav{
     padding: 10px;
     text-decoration: none;
     font-weight: 600;
+}
+
+/*Animação*/
+.card:hover{
+    transform: scale3d(1.1, 1.1,1);
 }
