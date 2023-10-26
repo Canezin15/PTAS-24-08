@@ -6,31 +6,15 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const produtos = [
-  {id: 1, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro1.avif"},
-  {id: 2, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro2.avif"},
-  {id: 3, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro3.jpg"},
-  {id: 4, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro4.jpg"},
-  {id: 5, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro5.jpg"},
-  {id: 6, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro6.jpg"},
-  {id: 7, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro7.jpg"},
-  {id: 8, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan", imagem:"carro8.jpg"},
-  {id: 9, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 10, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 11, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 12, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 13, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 14, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 15, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 16, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 17, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 18, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 19, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 20, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 21, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 22, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 23, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 24, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
-  {id: 25, nome: "nome produto", preco:"400", descricao:"Descricao do produto", imagem:"produto.jpg"},
+  {id: 1, nome: "Chevrolet Onix 1.0 Ltz Turbo", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, 4 Portas, Branco e Sedan", imagem:"carro1.avif"},
+  {id: 2, nome: "Chevrolet Onix 1.0 Ltz Turbo 5p", preco:"77.900", descricao:"Carro com 42.000 km Rodados, Ano 20/20, Flex, Manual, Motor 1.0, 5 Portas, Preto e hatch", imagem:"carro2.avif"},
+  {id: 3, nome: "Toyota Corolla 1.8 Altis Hybrid Flex Aut. 4p Hibrido Flex", preco:"139.900", descricao:"Carro com 71.826Km Rodados, Ano 20/20, Flex, Automático, Motor 1.8, 4 Portas, Prata e Sedan", imagem:"carro3.jpg"},
+  {id: 4, nome: "MINI Cooper 2.0 16V TWINPOWER S", preco:"143.890", descricao:"Carro com  32.000Km Rodados, Ano 19/19, Gasolina, Automático, Motor 2.0, 4 Portas, Azul e Mini SUV", imagem:"carro4.jpg"},
+  {id: 5, nome: "Volkswagen Polo 1.0 200 TSI COMFORTLINE, preco:"84.900", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Automático, Motor 1.0, 4 Portas, Prateado e Sedan", imagem:"carro5.jpg"},
+  {id: 6, nome: "BMW Serie 3 2.0 M Sport Aut. 4p 184 hp 8 marchas", preco:"251.900", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, 4 Portas, Branco e Sedan", imagem:"carro6.webp"},
+  {id: 7, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, 4 Portas, Branco e Sedan", imagem:"carro7.jpg"},
+  {id: 8, nome: "Onix 1.0 Sedan", preco:"82.950", descricao:"Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, 4 Portas, Branco e Sedan", imagem:"carro8.jpg"},
+  
   
   //... copia e cola.
 ]
