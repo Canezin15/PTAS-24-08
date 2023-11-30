@@ -31,35 +31,35 @@
 
 
  <div class="container">
-      <!--Card 1-->
-      <div class="card card-1">
-        <!--card-header-->
-        <div class="card-header">
-          <a href="/produtos">
-            <img
-              src="/imagem/carro1.avif"
-              class="card-img"
-              alt="IMG-1 Onix Sedan"
-            />
-          </a>
-        </div>
-        <!--/card-header-->
-
-        <!--card-body-->
-        <div class="card-body">
-          <h3 class="card-local">Onix 1.0 Sedan</h3>
-          <h2 class="carda-titulo">R$ 82.950</h2>
-          <p>Carro com 51.027km Rodados, Ano 21/21, Flex, Manual, Motor 1.0, Flaca Final 7, 4 Portas, Branco e Sedan</p>
-        </div>
-        <!--/card-body-->
-
-        <!--card-footer-->
-        <div class="card-footer">
-          <a href="/produtos">Comprar</a>
-        </div>
-        <!--/card-footer-->
-      </div>
-      <!--/Card 1-->
+           <!--Card 1-->
+           <div class="card card-1">
+            <!--card-header-->
+            <div class="card-header">
+              <a href="/produtos/<%= produto.id %>">
+                <img
+                  src="/<%= produto.imagem %>"
+                  class="card-img"
+                  alt="IMG-1 Onix Sedan"
+                />
+              </a>
+            </div>
+            <!--/card-header-->
+    
+            <!--card-body-->
+            <div class="card-body">
+              <h3 class="card-local"><%= produto.nome %></h3>
+              <h2 class="carda-titulo"><%= produto.preco %></h2>
+              <p><%= produto.descricao %></p>
+            </div>
+            <!--/card-body-->
+    
+            <!--card-footer-->
+            <div class="card-footer">
+              <a href="/produtos">Ver mais</a>
+            </div>
+            <!--/card-footer-->
+          </div>
+          <!--/Card 1-->
 
 </body>
 </html>

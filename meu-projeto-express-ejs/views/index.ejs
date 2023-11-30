@@ -41,7 +41,7 @@
       <div class="card card-1">
         <!--card-header-->
         <div class="card-header">
-          <a href="</produtos/<%= produto.id %>">
+          <a href="/produtos/<%= produto.id %>">
             <img
               src="<%= produto.imagem %>"
               class="card-img"
@@ -60,7 +60,7 @@
 
         <!--card-footer-->
         <div class="card-footer">
-          <a href="/produtos">Ver mais</a>
+          <a href="/produtos/<%= produto.id %>">
         </div>
         <!--/card-footer-->
       </div>
